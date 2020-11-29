@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array</title>
+</head>
+<body>
+	<h1>PRAKTIKUM ARRAY JAVASCRIPT</h1>
+	<p><b> sort :</b> <span id="sort" /></p> <br/>
+	<p><b> Reverse :</b> <span id="reverse" /></p> <br/>
+	<p><b> Concat :</b> <span id="concat" /></p> <br/>
+	<p><b> Length pada id Matkul :</b> <span id="length" /></p> <br/>
+	<p><b> Join :</b> <span id="join" /></p>
+
+	<script>
+		
+		let Matkulsisteminformasiharisenin = ["Praktikum Berbasis Web", "Sistem Pengambilan Keputusan", "Java web Programming", "Sistem Operasi"];
+		let Matkulsisteminformasihariselasa = ["Linux UBuntu", "Instalasi Komputer", "Sistem Cerdas"];
+		let jadwal = Matkulsisteminformasiharisenin.concat(Matkulsisteminformasihariselasa);
+
+		//  Metode Sort
+		document.getElementById('sort').innerHTML = Matkulsisteminformasiharisenin.sort();
+
+		//  Metode Reverse
+		document.getElementById('reverse').innerHTML = Matkulsisteminformasiharisenin.reverse();
+
+		//  Metode concat
+		document.getElementById('concat').innerHTML = jadwal;
+
+		//  Metode Length
+		document.getElementById('length').innerHTML = jadwal.length;
+
+		//  Metode Join
+		document.getElementById('join').innerHTML = jadwal.join(" &#9829 ");
+	</script>
+</body>
+</html>
